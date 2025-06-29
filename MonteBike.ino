@@ -10,6 +10,7 @@
 
 bool externalAntenna = false;
 bool enableGyro = false;
+bool enableMic = false;
 
 void setup() {
   Serial.begin(115200);
@@ -18,6 +19,7 @@ void setup() {
 
   if(enableGyro) enableAcc();
   if(externalAntenna) enableExternalAntenna();
+  if(enableMic) setupMic();
   
   setupServo();
   
@@ -28,5 +30,7 @@ void loop() {
    
   runBLE();
   runServo();
+  if(enableGyro) runImu();
+  if(enableMic) runMic();
 }
 

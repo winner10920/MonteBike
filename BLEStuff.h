@@ -1,6 +1,8 @@
 
 // REQUIRES ADDITIONAL BOARD MANAGER link added below
 // https://siliconlabs.github.io/arduino/package_arduinosilabs_index.json
+// Gollows guidr below
+// https://wiki.seeedstudio.com/xiao_mg24_bluetooth/#program-annotation-1
 
 #define RF_SW_PW_PIN PB5
 #define RF_SW_PIN PB4
